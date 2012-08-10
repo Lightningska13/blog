@@ -1,0 +1,9 @@
+<% if admin? %>
+	<div class="login">
+		<%=section_link('Posts',:controller => 'posts', :action => 'index') %>
+		<%=section_link('Post Cats',:controller => 'post_cats', :action => 'index') %>
+		<%=section_link('Users',:controller => 'users', :action => 'index') %>
+		<%= link_to 'Logout', logout_path %> |	
+		<span style="font-style: italic; font-size: 75%;"><%= current_user.name %> logged in</span>
+	</div>
+<% end %>

@@ -1,0 +1,92 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+/*CURSIVE FONT: font-family: "Monotype Corsiva", Corsiva, "Lucida Handwriting", "Script MT Bold", "Brush Script MT", "Comic Sans MS", "Comic Sans", cursive;*/
+body {
+	background: url('/assets/brownargyle.png');
+	font-family: "gill sans", "new baskerville", sans-serif;
+}
+#wrapper {
+	margin: auto;
+	padding: 0px;
+	width: 1000px;
+	background: #ffffff;
+	border-radius: 20px;
+	color: #3c2415;
+	border: 1px solid #3c2415;
+}
+#mainNav {
+	float: right;
+	font-family: "Monotype Corsiva", Corsiva, "Lucida Handwriting", "Script MT Bold", "Brush Script MT", "Comic Sans MS", "Comic Sans", cursive;
+	font-size: 150%;
+	margin-top: -45px;
+	word-spacing: 72px;
+	padding-right: 55px;
+}
+#mainNav a {
+	text-decoration: none;
+	color: #b6d5de;
+}
+.login a {
+	width: 500px;
+	padding-left: 10px;
+	text-decoration: none;
+	color: #3c2415;
+}
+#logo {
+	margin: auto;
+	width: 1000px;
+	height: 250px;
+	background: url('/assets/sleuth5_bweb.png');
+}
+#leftBox {
+	background: #ffffff;
+	float: left;
+	width: 200px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+#leftBox a {
+	color: #b6d5de;
+}
+#centerBox {
+	background: #ffffff;
+	float: left;
+	width: 600px;
+}
+#postListing {
+	width: 600px;
+	font-size: small;
+}
+#postListing a {
+	text-decoration: none;
+	color: #3c2415;
+	font-size: x-large;
+}
+#postImages {
+	border-top: 2px solid #3c2415;
+}
+#postListing span {
+	width: 700px;
+}
+#rightBox {
+	background: #ffffff;	
+	float: right;
+	width: 150px;
+	padding-right: 5px;
+}
+#footer {
+	clear: both;
+	text-align: center;
+	padding-top: 20px;
+}

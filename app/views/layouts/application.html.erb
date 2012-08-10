@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= SITE_NAME if SITE_NAME %> | <%= @page_title %></title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header" >
+			<link rel= "shortcut icon" href="/assets/hodinitials.gif"/>
+		</div>
+		<div id="logo">
+		</div><!--endlogo-->
+			<div id="mainNav">
+				<%= render "/layouts/main_nav" %>
+			</div><!--endmainNav-->
+				<%= render "layouts/admin_nav" %>
+				<p style="color: green; margin-left:190px;"><%= flash[:notice] %></p>
+			<div id="leftBox">
+				<%= image_tag('/assets/blogimage1.png')%>
+				Hello- My name is Brittany and this is where a brief description will go on all the pages.<%=section_link('About',:controller => 'about', :action => 'index')%>
+			</div>
+			<div id="rightBox">
+				<%= image_tag('/assets/bsswebad.png')%>
+			</div>
+			<%= yield %>
+		<div id="footer">
+			Sleuth 5
+		</div><!--endfooter-->
+	</div><!--wrapper-->
+</body>
+</html>

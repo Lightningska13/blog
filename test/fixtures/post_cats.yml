@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cat_name: MyString
+  featured: false
+  description: MyText
+  catpic_file_name: MyString
+  catpic_file_size: 1
+  catpic_content_type: MyString
+
+two:
+  cat_name: MyString
+  featured: false
+  description: MyText
+  catpic_file_name: MyString
+  catpic_file_size: 1
+  catpic_content_type: MyString

@@ -1,0 +1,4 @@
+<%=section_link('Home', :controller => 'dash', :action => 'index')%>
+<% @postNav.each do |nav| %>
+	<%= facet_link(nav.cat_name, :controller =>'post_cats', :action =>'show', :id =>nav.id) %>
+<% end %>

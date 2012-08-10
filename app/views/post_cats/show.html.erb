@@ -1,0 +1,20 @@
+<div id="centerBox">
+<p id="notice"><%= notice %></p>
+<h1>Recent <%= @post_cat.cat_name %> Posts</h1>
+<div id="postListing">
+<% if @posts.present? %>
+<% @posts.each do |post| %>
+	<i><%=link_to post.name, post, :class => 'nav' %></i>
+	<span><%= post.blurb %></span><br /><br />
+		<div id="postImages">
+			<%= image_tag(post.pic.url(:large)) %>
+			<%= image_tag(post.pic2.url(:large)) %>
+			<%= image_tag(post.pic3.url(:large)) %>
+			<%= image_tag(post.pic4.url(:large)) %>
+		</div><br />
+	<span><%= post.description %></span>
+	<p><%= image_tag('/assets/postdivider.png')%></p>
+<% end %>
+<% end %>
+</div>
+</div>

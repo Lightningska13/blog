@@ -1,0 +1,33 @@
+<h1>Listing post_cats</h1>
+
+<table>
+  <tr>
+    <th>Cat name</th>
+    <th>Featured</th>
+    <th>Description</th>
+    <th>Catpic file name</th>
+    <th>Catpic file size</th>
+    <th>Catpic content type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @post_cats.each do |post_cat| %>
+  <tr>
+    <td><%= post_cat.cat_name %></td>
+    <td><%= post_cat.featured %></td>
+    <td><%= post_cat.description %></td>
+    <td><%= post_cat.catpic_file_name %></td>
+    <td><%= post_cat.catpic_file_size %></td>
+    <td><%= post_cat.catpic_content_type %></td>
+    <td><%= link_to 'Show', post_cat %></td>
+    <td><%= link_to 'Edit', edit_post_cat_path(post_cat) %></td>
+    <td><%= link_to 'Destroy', post_cat, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Post cat', new_post_cat_path %>
