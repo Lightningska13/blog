@@ -1,9 +1,9 @@
 <div id="centerBox">
 	<div id="postListing">
+		<% if admin? %>
+			<%= link_to 'New Post', new_post_path, :class => 'admin' %><br />
+		<% end %>
 			<% @posts.each do |post| %>
-			<% if admin? %>
-				<%= link_to 'New Post', new_post_path, :class => 'admin' %><br />
-			<% end %><br />
 				<i><%= link_to post.name, post %></i><br />
 					<span><%= post.blurb %></span><br /><br />
 						<div id="postImages">
