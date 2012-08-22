@@ -64,6 +64,10 @@ body {
 	float: left;
 	width: 600px;
 }
+#centerBox h1 {
+	font-style: italic;
+	margin-left: 10px;
+}
 #postListing {
 	width: 600px;
 	font-size: small;
@@ -89,4 +93,11 @@ body {
 	clear: both;
 	text-align: center;
 	padding-top: 20px;
+	color: #3c2415;
+}
+#footer a {
+	font-size: x-small;
+}
+#footer a:visited {
+	color: #3c2415;
 }

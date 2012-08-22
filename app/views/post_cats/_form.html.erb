@@ -1,3 +1,4 @@
+<div id="centerCol">
 <%= form_for(@post_cat) do |f| %>
   <% if @post_cat.errors.any? %>
     <div id="error_explanation">
@@ -10,32 +11,16 @@
       </ul>
     </div>
   <% end %>
-
   <div class="field">
     <%= f.label :cat_name %><br />
     <%= f.text_field :cat_name %>
   </div>
   <div class="field">
-    <%= f.label :featured %><br />
-    <%= f.check_box :featured %>
-  </div>
-  <div class="field">
     <%= f.label :description %><br />
     <%= f.text_area :description %>
-  </div>
-  <div class="field">
-    <%= f.label :catpic_file_name %><br />
-    <%= f.text_field :catpic_file_name %>
-  </div>
-  <div class="field">
-    <%= f.label :catpic_file_size %><br />
-    <%= f.number_field :catpic_file_size %>
-  </div>
-  <div class="field">
-    <%= f.label :catpic_content_type %><br />
-    <%= f.text_field :catpic_content_type %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+</div>

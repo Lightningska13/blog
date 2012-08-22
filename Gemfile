@@ -14,10 +14,6 @@ end
 
 gem 'json'
 
-gem 'authlogic' 
-gem 'paperclip', "~>2.7"
-gem 'ckeditor', "3.6.3"
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -30,6 +26,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'authlogic' 
+gem 'paperclip', "~>2.7"
+gem 'ckeditor', "3.7.1"
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password

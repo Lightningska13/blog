@@ -18,7 +18,7 @@ class PostCatsController < ApplicationController
   def show
     @post_cat = PostCat.find(params[:id])
     @posts = @post_cat.posts
-    @page_title = "Post Category"
+    @page_title = "Recent Posts"
 
     respond_to do |format|
       format.html # show.html.erb
