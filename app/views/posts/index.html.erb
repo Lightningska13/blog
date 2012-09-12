@@ -1,22 +1,20 @@
-<div id="centerBox">
-	<div id="postListing">
+<div id="postListing">
+	<% if admin? %>
+		<%= link_to 'New Post', new_post_path, :class => 'admin' %><br />
+	<% end %>
+		<% @posts.each do |post| %>
+			<%= link_to post.name, post %>
+				<span><%= post.blurb %></span><br /><br />
+					<div id="postImages">
+						<%= image_tag(post.pic.url(:large)) %>
+						<%= image_tag(post.pic2.url(:large)) %>
+						<%= image_tag(post.pic3.url(:large)) %>
+						<%= image_tag(post.pic4.url(:large)) %>
+					</div><br />
+				<span><%= post.description %></span><br />
 		<% if admin? %>
-			<%= link_to 'New Post', new_post_path, :class => 'admin' %><br />
+		<%= link_to 'Delete Post--^', post, :confirm => "Are you sure?", :method => :delete,  :class => 'admin' %>
+		<% end%>
+			<p><%= image_tag('/assets/postdivider.png')%></p>
 		<% end %>
-			<% @posts.each do |post| %>
-				<i><%= link_to post.name, post %></i><br />
-					<span><%= post.blurb %></span><br /><br />
-						<div id="postImages">
-							<%= image_tag(post.pic.url(:large)) %>
-							<%= image_tag(post.pic2.url(:large)) %>
-							<%= image_tag(post.pic3.url(:large)) %>
-							<%= image_tag(post.pic4.url(:large)) %>
-						</div><br />
-					<span><%= post.description %></span><br />
-			<% if admin? %>
-			<%= link_to 'Delete Post--^', post, :confirm => "Are you sure?", :method => :delete,  :class => 'admin' %>
-			<% end%>
-				<p><%= image_tag('/assets/postdivider.png')%></p>
-			<% end %>
-	</div>
 </div>

@@ -1,19 +1,17 @@
-<div id="centerBox">
-	<div id="postListing">
-		<div style="text-decoration: none; color: #3c2415; font-size: x-large; font-style: italic;"><%= @post.name %>
-		<% if admin? %>
-			| <%= link_to 'Edit', edit_post_path(@post), :class=>'admin' %>
-		<% end %>
-		</div>
-		<span><%= @post.blurb %></span><br /><br />
-			<div id="postImages">
-				<%= image_tag(@post.pic.url(:large)) %>
-				<%= image_tag(@post.pic2.url(:large)) %>
-				<%= image_tag(@post.pic3.url(:large)) %>
-				<%= image_tag(@post.pic4.url(:large)) %>
-			</div>
-		<span><%== @post.description %></span>
-		<p><%= image_tag('/assets/postdivider.png')%></p>
+<div id="postListing">
+	<div style="text-decoration: none; color: #3c2415; font-size: x-large; font-style: italic;"><%= @post.name %>
+	<% if admin? %>
+		| <%= link_to 'Edit', edit_post_path(@post), :class=>'admin' %>
+	<% end %>
 	</div>
+	<span><%= @post.blurb %></span><br /><br />
+		<div id="postImages">
+			<%= image_tag(@post.pic.url(:large)) %>
+			<%= image_tag(@post.pic2.url(:large)) %>
+			<%= image_tag(@post.pic3.url(:large)) %>
+			<%= image_tag(@post.pic4.url(:large)) %>
+		</div>
+	<span><%== @post.description %></span>
+	<p><%= image_tag('/assets/postdivider.png')%></p>
 </div>
 

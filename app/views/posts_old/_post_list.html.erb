@@ -1,12 +1,14 @@
-<% @posts.each do |post| %>
-	<i><%= link_to post.name, post %></i><br />
-		<span><%= post.blurb %></span><br /><br />
-			<div id="postImages">
-				<%= image_tag(post.pic.url(:large)) %>
-				<%= image_tag(post.pic2.url(:large)) %>
-				<%= image_tag(post.pic3.url(:large)) %>
-				<%= image_tag(post.pic4.url(:large)) %>
-			</div><br />
-		<span><%= post.description %></span><br /><br />
-		<p><%= image_tag('/assets/postdivider.png')%></p>
-<% end %>
+<div id="postListing">
+	<% @posts.each do |post| %>
+		<i><%= link_to post.name, post %></i><br />
+			<span><%= post.blurb %></span><br /><br />
+				<div id="postImages">
+					<%= image_tag(post.pic.url(:large)) %>
+					<%= image_tag(post.pic2.url(:large)) %>
+					<%= image_tag(post.pic3.url(:large)) %>
+					<%= image_tag(post.pic4.url(:large)) %>
+				</div><br />
+			<span><%= post.description %></span><br /><br />
+			<p><%= image_tag('/assets/postdivider.png')%></p>
+	<% end %>
+</div>

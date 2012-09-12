@@ -1,10 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
   <title><%= SITE_NAME if SITE_NAME %> | <%= @page_title %></title>
   <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+    <style type="text/css">
+      @media (min-width: 481px) and (max-width: 768px) {
+        #logo { width:768px; max-height: 192px; background: url('/assets/sleuth5_web768.jpg'); background-repeat: no-repeat; }
+        #wrapper {width: 740px; }
+		#mainNav {margin-top: -44px;}
+		#mainNav a {width: 89px; height: 37;}
+		#home {background: url('/assets/home768.png') no-repeat;}
+		#projects {background: url('/assets/projects768.png') no-repeat;}
+		#littlebear {background: url('/assets/littlebear768.png') no-repeat;}
+		#life {background: url('/assets/life768.png') no-repeat;}
+		#food {background: url('/assets/food768.png') no-repeat;}
+		#leftBox { width: 150px; background: url('/assets/sleuthabout768.png'); background-repeat: no-repeat; }
+        #postListing {width: 410px; padding-left: 5px; }
+        #postListing a {}
+        #postListing img {max-width: 410px; }
+		#postListing h1 {font-size: 125%;}
+        #postListing p {font-size: 90%;}
+	  	#postImages {border-top: 2px solid #3c2415; }
+		#rightBox {}
+		#footer {}
+		#footer a {}
+		#footer a:visited {}
+      }
+
+      @media (min-width: 321px) and (max-width: 480px) {
+        #logo {width:480px; max-height: 120px; background: url('/assets/sleuth5_web480.jpg'); background-repeat: no-repeat; }
+        #wrapper {width: 450px; }
+		#mainNav {margin-top: -30px; height: 23px; border: 1px solid purple;}
+		#mainNav a {width: 54px; height: 23;}
+		#home {background: url('/assets/home480.png') no-repeat;}
+		#projects {background: url('/assets/projects480.png') no-repeat;}
+		#littlebear {background: url('/assets/littlebear480.png') no-repeat;}
+		#life {background: url('/assets/life480.png') no-repeat;}
+		#food {background: url('/assets/food480.png') no-repeat;}
+		#leftBox {width: 105px; float: right; background: url('/assets/sleuthabout480.png') no-repeat; padding-right: 0px;}   
+        #postListing { width: 330px; padding-left: 5px;}
+        #postListing a {}
+        #postListing img { max-width: 330px; }
+		#postListing h1 {font-size: 115%;}
+        #postListing p {font-size: 80%;}
+		#rightBox { display: none; }
+		#footer {}
+		#footer a {}
+		#footer a:visited {}
+      }
+
+      @media (max-width: 320px) {
+        #logo { width:275px; background: url('/assets/sleuth5_web320.jpg'); background-repeat: no-repeat; border-bottom: 1px solid #3c2415; margin-bottom: 2px}
+        #wrapper { width: 275px; padding: 0px; }
+		#mainNav {margin-top: -3px;}
+		#mainNav a {width: 55px; height: 23;}
+		#home {background: url('/assets/home320.png') no-repeat;}
+		#projects {background: url('/assets/projects320.png') no-repeat;}
+		#littlebear {background: url('/assets/littlebear320.png') no-repeat;}
+		#life {background: url('/assets/life320.png') no-repeat;}
+		#food {background: url('/assets/food320.png') no-repeat;}
+        #leftBox { display: none; }
+        #postListing { width: 272px; padding-left: 1px; }
+        #postListing a {}
+        #postListing img { max-width:272px; }
+		#postListing h1 {font-size: 100%; text-align: center;}
+        #postListing span {}
+		#rightBox { display: none; }
+      }
+
+	</style>
 </head>
 <body>
 	<div id="wrapper">
@@ -18,10 +85,7 @@
 			</div><!--endmainNav-->
 				<%= render "layouts/admin_nav" %>
 				<p style="color: green; margin-left:190px;"><%= flash[:notice] %></p>
-			<div id="leftBox">
-				<%= image_tag('/assets/blogimage1.png')%>
-				Hello- My name is Brittany and this is where a brief description will go on all the pages.<%=section_link('About',:controller => 'about', :action => 'index')%>
-			</div>
+				<%= link_to '', {:controller => 'about', :action => 'index'}, :id => 'leftBox' %>
 			<div id="rightBox">
 				<%= image_tag('/assets/bsswebad.png')%>
 			</div>
