@@ -23,6 +23,7 @@ bsswebad1.png: bsswebad1-2eff4b9b3f207048b4ee6126d6f40e25.png
 projects768.png: projects768-945b9448675a1229df788a8b195cc51e.png
 ckeditor/plugins/showblocks/images/block_h1.png: ckeditor/plugins/showblocks/images/block_h1-735788c04d379661075b1589e4e74ea4.png
 ckeditor/CHANGES.html: ckeditor/CHANGES-f3495235117231ad2212e649d193f30b.html
+sleuthicon.png: sleuthicon-db85e5d3c3efcd368ddb8fcec1756e69.png
 ckeditor/plugins/smiley/images/devil_smile.gif: ckeditor/plugins/smiley/images/devil_smile-637e8f5e008a76d9e43e8cfda7f0d37a.gif
 ckeditor/skins/v2/icons.png: ckeditor/skins/v2/icons-909f3451ee6248f35b3ff262a2dadd08.png
 ckeditor/plugins/uicolor/yui/assets/picker_mask.png: ckeditor/plugins/uicolor/yui/assets/picker_mask-003d5be77847d5aab97c9f37037c4d74.png
@@ -75,10 +76,11 @@ ckeditor/plugins/smiley/images/kiss.gif: ckeditor/plugins/smiley/images/kiss-e32
 ckeditor/plugins/flash/images/placeholder.png: ckeditor/plugins/flash/images/placeholder-ab3e1705b759ba6861eb62608c6fc07c.png
 ckeditor/plugins/smiley/images/sad_smile.gif: ckeditor/plugins/smiley/images/sad_smile-e694609eee6b55fc08299540516a2c24.gif
 ckeditor/plugins/uicolor/lang/_translationstatus.txt: ckeditor/plugins/uicolor/lang/_translationstatus-fa6c84515577627f1cfb44a6f225c58b.txt
+ckeditor/plugins/smiley/images/thumbs_down.gif: ckeditor/plugins/smiley/images/thumbs_down-e7b9cadcbb9c0b4c8143e9961ec31e86.gif
 ckeditor/plugins/iframe/images/placeholder.png: ckeditor/plugins/iframe/images/placeholder-aef3f6d102ebaf87c679d9b12677557b.png
+sleuthicon.gif: sleuthicon-389c00de18e9e8d1ad8ba1002a03fe4e.gif
 sleuth5_web480.jpg: sleuth5_web480-1919f98df937006b60429e979db57c6a.jpg
 life.png: life-b89279733dea7e54eb5b8a985dfec76c.png
-ckeditor/plugins/smiley/images/thumbs_down.gif: ckeditor/plugins/smiley/images/thumbs_down-e7b9cadcbb9c0b4c8143e9961ec31e86.gif
 ckeditor/application.css: ckeditor/application-3bae7a0cbcd690437dfd0e9d9b027081.css
 ckeditor/plugins/smiley/images/cry_smile.gif: ckeditor/plugins/smiley/images/cry_smile-665ddaebed7eac53a4273961b19d8ada.gif
 ckeditor/plugins/templates/templates/images/template2.gif: ckeditor/plugins/templates/templates/images/template2-df8ce5b957407f3b819721b72648a5d6.gif
@@ -119,7 +121,7 @@ ckeditor/plugins/attachment/images/attachment.png: ckeditor/plugins/attachment/i
 ckeditor/plugins/about/dialogs/logo_ckeditor.png: ckeditor/plugins/about/dialogs/logo_ckeditor-9aac6e98998b00faf21319608de588c9.png
 ckeditor/filebrowser/images/thumbs/txt.gif: ckeditor/filebrowser/images/thumbs/txt-4ed2908bbd7436c23153e3fdc94178e6.gif
 ckeditor/INSTALL.html: ckeditor/INSTALL-b549f694b9fb07ef4538dbfca7216d16.html
-application.js: application-9403e053f9060b913e6ad1fae908f078.js
+application.js: application-f53d56cd05cb94f20c7761d25354a05e.js
 ckeditor/skins/office2003/images/dialog_sides_rtl.png: ckeditor/skins/office2003/images/dialog_sides_rtl-70bc78d60b6c47ca96cbec7426301d86.png
 ckeditor/plugins/smiley/images/shades_smile.gif: ckeditor/plugins/smiley/images/shades_smile-a32970726091feba128e57cef41263f8.gif
 ckeditor/plugins/smiley/images/teeth_smile.gif: ckeditor/plugins/smiley/images/teeth_smile-16f81a5ba72e498bb731951dc4d76c87.gif

@@ -1,11 +1,11 @@
 Blog::Application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
+
   resources :post_cats
 
   resources :posts
   
   get "about/index"
-  
-  resources :events
 
   resources :users
     resources :user_sessions
