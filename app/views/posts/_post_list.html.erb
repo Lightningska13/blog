@@ -1,9 +1,9 @@
 <div id="postListing">
 	<% @posts.each do |post| %>
 		<i><%= link_to post.name, post %></i><br />
-			<span><%= post.blurb %></span><br /><br />
+			<div class="text"><%= post.blurb %></div><br /><br />
 				<%= render :partial => "/posts/item_list", :locals => {:post => post} %>
-			<span><%= post.description %></span><br /><br />
+			<div class="text"><%== post.description %></div><br /><br />
 			<p><%= image_tag('/assets/postdivider.png')%></p>
 	<% end %>
 </div>

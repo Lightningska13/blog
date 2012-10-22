@@ -4,9 +4,9 @@
 	<% end %>
 		<% @posts.each do |post| %>
 			<%= link_to post.name, post %>
-				<span><%= post.blurb %></span><br /><br />
+				<div class="text"><%= post.blurb %></div><br /><br />
 					<%= render :partial => "/posts/item_list", :locals => {:post => post} %>
-				<span><%= post.description %></span><br />
+				<div class="text"><%== post.description %></div><br />
 		<% if admin? %>
 		<%= link_to 'Delete Post--^', post, :confirm => "Are you sure?", :method => :delete,  :class => 'admin' %>
 		<% end%>

@@ -90,6 +90,10 @@ body {
 	font-size: 150%;
 }
 
+.text {
+	font-size: 80%;
+}
+
 #postImages {
 	border-top: 2px solid #3c2415;
 }
