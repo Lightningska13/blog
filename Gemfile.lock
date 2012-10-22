@@ -33,7 +33,7 @@ GEM
       activerecord (>= 3.0.0)
       activesupport (>= 3.0.0)
     builder (3.0.0)
-    ckeditor (3.7.1)
+    ckeditor (3.7.3)
       mime-types
       orm_adapter
     cocaine (0.2.1)
@@ -118,7 +118,7 @@ PLATFORMS
 
 DEPENDENCIES
   authlogic
-  ckeditor (= 3.7.1)
+  ckeditor (= 3.7.3)
   coffee-rails (~> 3.2.1)
   jquery-rails
   json

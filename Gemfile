@@ -28,7 +28,7 @@ end
 
 gem 'authlogic' 
 gem 'paperclip', "~>2.7"
-gem 'ckeditor', "3.7.1"
+gem 'ckeditor', "3.7.3"
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password

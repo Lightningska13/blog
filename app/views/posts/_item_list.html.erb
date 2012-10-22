@@ -1,0 +1,6 @@
+<div id="postImages">
+	<%= image_tag(post.pic.url(:large)) if post.pic_file_name.present? %>
+	<%= image_tag(post.pic2.url(:large)) if post.pic2_file_name.present? %>
+	<%= image_tag(post.pic3.url(:large)) if post.pic3_file_name.present? %>
+	<%= image_tag(post.pic4.url(:large)) if post.pic4_file_name.present? %>
+</div><br />
