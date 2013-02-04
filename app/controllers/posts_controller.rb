@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.order("created_at desc")
-    @page_title = "Where CJs Been"
+    @page_title = "Posts"
 
     respond_to do |format|
       format.html # index.html.erb
