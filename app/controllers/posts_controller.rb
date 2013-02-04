@@ -47,7 +47,7 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(params[:post])
-
+    @post_cats = PostCat.all
     respond_to do |format|
       if @post.save
         format.html { redirect_to @post, :notice => 'Post was successfully created.' }
@@ -64,6 +64,7 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
     @page_title = "Update Post"
+    @post_cats = PostCat.all
 
     respond_to do |format|
       if @post.update_attributes(params[:post])
